@@ -1,0 +1,29 @@
+# Core ETL
+requests>=2.32.0
+pandas>=2.3.0
+numpy>=2.3.0
+
+# Database
+SQLAlchemy>=2.0.41
+PyMySQL>=1.1.1
+
+# Environment Variables
+python-dotenv>=1.1.0
+
+# Logging (built into Python)
+# logging
+
+# Data formats
+pyarrow>=20.0.0
+
+# Testing
+pytest>=8.4.0
+pytest-mock>=3.14.0
+
+# Code Quality
+black>=25.1.0
+flake8>=7.2.0
+isort>=6.0.1
+
+# Future Scaling
+docker>=7.1.0
