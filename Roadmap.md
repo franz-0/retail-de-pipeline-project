@@ -1,22 +1,10 @@
 DummyJSON Pipeline Project Roadmap
 
-
-
-
-
 Title: Retail Data Engineering Pipeline
-
-
-
-
 
 Phase 1 — Python ETL
 
-
-
 Learn:
-
-
 
 requests
 
@@ -26,37 +14,26 @@ Cleaning data
 
 Loading into MySQL
 
-
-
 Example pipeline:
-
-
 
 DummyJSON API
 
-&#x20;     │
-
-&#x20;     ▼
+│
+▼
 
 Extract
 
-&#x20;     │
-
-&#x20;     ▼
+│
+▼
 
 Transform
 
-&#x20;     │
-
-&#x20;     ▼
+│
+▼
 
 MySQL
 
-
-
 Skills you'll gain:
-
-
 
 API requests
 
@@ -70,53 +47,27 @@ Error handling
 
 Modular Python
 
-
-
-
-
 Phase 2 — Better Project Structure
-
-
 
 Refactor into modules:
 
-
-
 project/
-
-
 
 extract/
 
-
-
 transform/
-
-
 
 load/
 
-
-
 config/
-
-
 
 utils/
 
-
-
 logs/
-
-
 
 pipeline.py
 
-
-
 Add:
-
-
 
 Configuration files
 
@@ -128,41 +79,21 @@ Retry logic
 
 Exception handling
 
-
-
-
-
 Phase 3 — Incremental Loading
 
-
-
 Instead of downloading everything every time:
-
-
 
 Yesterday
 
 ↓
 
-
-
 Only new products
-
-
 
 ↓
 
-
-
 Load
 
-
-
-
-
 Learn:
-
-
 
 Watermarks
 
@@ -172,47 +103,23 @@ Upserts
 
 Deduplication
 
-
-
-
-
 Phase 4 — Data Warehouse
-
-
 
 Instead of one large table, design a warehouse.
 
-
-
 Example:
 
+dim_products
 
+dim_users
 
-dim\_products
+dim_categories
 
+fact_orders
 
-
-dim\_users
-
-
-
-dim\_categories
-
-
-
-fact\_orders
-
-
-
-fact\_order\_items
-
-
-
-
+fact_order_items
 
 Practice:
-
-
 
 Star schema
 
@@ -224,41 +131,21 @@ Surrogate keys
 
 Slowly changing dimensions (later)
 
-
-
-
-
 Phase 5 — Docker
-
-
 
 Containerize the entire application.
 
-
-
 Docker
-
-
 
 │
 
-
-
 ├── Python ETL
-
-
 
 ├── MySQL
 
-
-
 └── Adminer
 
-
-
 You'll learn:
-
-
 
 Dockerfiles
 
@@ -268,69 +155,35 @@ Networking
 
 Volumes
 
-
-
 Running the project becomes as simple as:
-
-
 
 docker compose up
 
-
-
-
-
 Phase 6 — Apache Airflow
-
-
 
 Replace manual execution.
 
-
-
 Instead of:
-
-
 
 python pipeline.py
 
-
-
 Use an Airflow DAG:
-
-
 
 Extract
 
-
-
 ↓
-
-
 
 Transform
 
-
-
 ↓
-
-
 
 Load
 
-
-
 ↓
-
-
 
 Data Quality Check
 
-
-
 Learn:
-
-
 
 DAGs
 
@@ -344,21 +197,11 @@ Monitoring
 
 Task dependencies
 
-
-
-
-
 Phase 7 — Data Validation
-
-
 
 Introduce quality checks using tools or validation scripts.
 
-
-
 Examples:
-
-
 
 No duplicate product IDs
 
@@ -370,27 +213,13 @@ Category exists
 
 Data types are correct
 
-
-
 This teaches an important production skill: verifying data before it's trusted.
-
-
-
-
-
-
 
 Phase 8 — Testing
 
-
-
 Add automated tests.
 
-
-
 Test:
-
-
 
 Extract functions
 
@@ -400,11 +229,7 @@ SQL loading
 
 API responses
 
-
-
 Learn:
-
-
 
 pytest
 
@@ -414,69 +239,33 @@ Fixtures
 
 CI-friendly tests
 
-
-
-
-
 Phase 9 — CI/CD
-
-
 
 When push to GitHub:
 
-
-
 Push
 
-
-
 ↓
-
-
 
 GitHub Actions
 
-
-
 ↓
-
-
 
 Run Tests
 
-
-
 ↓
-
-
 
 Lint
 
-
-
 ↓
-
-
 
 Build Docker image
 
-
-
 This demonstrates professional software engineering practices.
-
-
-
-
-
-
 
 Phase 10 — Analytics
 
-
-
 Use SQL to answer business questions, such as:
-
-
 
 Top-selling categories
 
@@ -488,17 +277,9 @@ Average product rating
 
 Stock distribution
 
-
-
-
-
 Phase 11 — Dashboard
 
-
-
 Connect the warehouse to a BI tool like Power BI, Tableau, or Metabase to build dashboards showing:
-
-
 
 Sales
 
@@ -510,79 +291,39 @@ Inventory
 
 Ratings
 
-
-
-
-
 Phase 12 — Cloud
-
-
 
 Finally, migrate components to the cloud.
 
-
-
 For example:
-
-
 
 API
 
-
-
 ↓
-
-
 
 Python ETL
 
-
-
 ↓
-
-
 
 Cloud Storage
 
-
-
 ↓
-
-
 
 Managed Database
 
-
-
 ↓
-
-
 
 Airflow
 
-
-
 ↓
-
-
 
 Dashboard
 
-
-
 Explore services from providers such as AWS, Azure, or Google Cloud after being comfortable with local deployments.
-
-
-
-
 
 Mission:
 
-
-
 Build one repository that tells the story of growth in ETL Pipeline:
-
-
 
 Python programming
 
@@ -611,8 +352,3 @@ CI/CD
 Dashboards
 
 Cloud deployment
-
-
-
-
-

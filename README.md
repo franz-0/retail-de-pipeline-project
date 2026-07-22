@@ -1,22 +1,12 @@
 \# DummyJSON Retail Data Engineering Pipeline
 
-
-
 A production-style Data Engineering project that extracts retail product data from the DummyJSON REST API, transforms it using Pandas, and loads it into MySQL.
-
-
 
 The project is designed to demonstrate the complete lifecycle of building a modern ETL pipeline while gradually incorporating software engineering and Data Engineering best practices.
 
-
-
 \---
 
-
-
 \## Features
-
-
 
 \- REST API Extraction
 
@@ -38,11 +28,7 @@ The project is designed to demonstrate the complete lifecycle of building a mode
 
 \- Retry Logic
 
-
-
 Upcoming Features
-
-
 
 \- Data Warehouse
 
@@ -60,15 +46,9 @@ Upcoming Features
 
 \- Cloud Deployment
 
-
-
 \---
 
-
-
 \## Tech Stack
-
-
 
 \- Python
 
@@ -90,11 +70,7 @@ Upcoming Features
 
 \- GitHub
 
-
-
 Future
-
-
 
 \- Docker
 
@@ -104,15 +80,9 @@ Future
 
 \- AWS / Azure / GCP
 
-
-
 \---
 
-
-
 \## Project Structure
-
-
 
 ```text
 
@@ -144,65 +114,51 @@ pipeline.py
 
 ```
 
-
-
 \---
 
-
-
 \## ETL Workflow
-
-
 
 ```text
 
 DummyJSON API
 
-&#x20;     │
+│
 
-&#x20;     ▼
+▼
 
-&#x20;Extract
+Extract
 
-&#x20;     │
+│
 
-&#x20;     ▼
+▼
 
 Transform
 
-&#x20;     │
+│
 
-&#x20;     ▼
+▼
 
 Incremental Detection
 
-&#x20;     │
+│
 
-&#x20;     ▼
+▼
 
 Load into MySQL
 
-&#x20;     │
+│
 
-&#x20;     ▼
+▼
 
 Logging
 
 ```
 
-
-
 \---
-
-
 
 \## Installation
 
-
-
 Clone the repository.
-
-
 
 ```bash
 
@@ -210,11 +166,7 @@ git clone https://github.com/yourusername/dummyjson-pipeline.git
 
 ```
 
-
-
 Create a virtual environment.
-
-
 
 ```bash
 
@@ -222,15 +174,9 @@ python -m venv .venv
 
 ```
 
-
-
 Activate it.
 
-
-
 Windows
-
-
 
 ```bash
 
@@ -238,11 +184,7 @@ Windows
 
 ```
 
-
-
 Linux / macOS
-
-
 
 ```bash
 
@@ -250,11 +192,7 @@ source .venv/bin/activate
 
 ```
 
-
-
 Install dependencies.
-
-
 
 ```bash
 
@@ -262,19 +200,11 @@ pip install -r requirements.txt
 
 ```
 
-
-
 \---
-
-
 
 \## Environment Variables
 
-
-
 Create a `.env` file.
-
-
 
 ```env
 
@@ -294,15 +224,9 @@ API\_URL=https://dummyjson.com/products
 
 ```
 
-
-
 \---
 
-
-
 \## Run
-
-
 
 ```bash
 
@@ -310,19 +234,11 @@ python pipeline.py
 
 ```
 
-
-
 \---
-
-
 
 \## Learning Objectives
 
-
-
 This repository demonstrates practical experience with:
-
-
 
 \- REST APIs
 
@@ -354,15 +270,9 @@ This repository demonstrates practical experience with:
 
 \- Cloud Data Engineering
 
-
-
 \---
 
-
-
 \## Roadmap
-
-
 
 \- ✅ Python ETL
 
@@ -390,15 +300,8 @@ This repository demonstrates practical experience with:
 
 \- ⏳ Cloud Deployment
 
-
-
 \---
-
-
 
 \## Author
 
-
-
 Built as part of my journey from IT Operations into Data Engineering, focusing on production-ready ETL pipelines and modern data engineering practices.
-
